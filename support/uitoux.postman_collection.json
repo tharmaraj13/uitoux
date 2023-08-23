@@ -1,0 +1,196 @@
+{
+	"info": {
+		"_postman_id": "8c84b8b6-3ee5-4dfc-8949-70cdb0b42f48",
+		"name": "uitoux",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "20807588"
+	},
+	"item": [
+		{
+			"name": "create-category",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_name",
+							"value": "Plumbing",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/create-category"
+			},
+			"response": []
+		},
+		{
+			"name": "view-category",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/view-category"
+			},
+			"response": []
+		},
+		{
+			"name": "add-product",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "category_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "prod_name",
+							"value": "Motor oil Level 5",
+							"type": "text"
+						},
+						{
+							"key": "part_code",
+							"value": "SKU: 573-493B6-C",
+							"type": "text"
+						},
+						{
+							"key": "discount_price",
+							"value": "452",
+							"type": "text"
+						},
+						{
+							"key": "fixed_price",
+							"value": "573",
+							"type": "text"
+						},
+						{
+							"key": "status",
+							"value": "featured",
+							"description": "featured or normal",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/add-product"
+			},
+			"response": []
+		},
+		{
+			"name": "view-product",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "featured",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/view-product"
+			},
+			"response": []
+		},
+		{
+			"name": "view-product-post",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "status",
+							"value": "featured",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/view-product"
+			},
+			"response": []
+		},
+		{
+			"name": "add-review",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "2",
+							"type": "text"
+						},
+						{
+							"key": "prod_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "stars",
+							"value": "4",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/add-review"
+			},
+			"response": []
+		},
+		{
+			"name": "add-cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "prod_id",
+							"value": "1",
+							"type": "text"
+						},
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/add-cart"
+			},
+			"response": []
+		},
+		{
+			"name": "view-cart",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "user_id",
+							"value": "1",
+							"type": "text"
+						}
+					]
+				},
+				"url": "http://localhost:3000/view-cart"
+			},
+			"response": []
+		}
+	]
+}
