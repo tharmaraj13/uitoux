@@ -8,5 +8,5 @@ app.use(upload.array());
 var router=require('./routes');
 
 app.use('',router);
-
+console.log('Tharmaraj');
 app.listen(3000);
